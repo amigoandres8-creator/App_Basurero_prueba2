@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomenu1"
+    tools:context=".CrearCuenta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvtitcrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Crear Cuenta"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtrut"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/borde"
+            android:ems="10"
+            android:hint="Rut (11111111-1)"
+            android:inputType="text"
+            android:maxLength="12"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtnom"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/borde"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#555555"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtape"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/borde"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#555555"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtcor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/borde"
+            android:ems="10"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spcargo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/borde"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/txtcon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/borde"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtcon2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/borde"
+            android:ems="10"
+            android:hint="Repetir Contraseña"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#555555"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnreg"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Registrar"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="6dp" />
+
+            <Button
+                android:id="@+id/btnvolcre"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/rojo"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Volver"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

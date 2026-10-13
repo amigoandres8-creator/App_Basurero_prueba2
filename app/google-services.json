@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "9267741347",
+    "firebase_url": "https://appbasurero-c3756-default-rtdb.firebaseio.com",
+    "project_id": "appbasurero-c3756",
+    "storage_bucket": "appbasurero-c3756.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9267741347:android:77e0e2abac127c343f7516",
+        "android_client_info": {
+          "package_name": "cl.inacap.app_basurero"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoXyqEERUUp_PK-X7frQeP0uE2_e--jlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
