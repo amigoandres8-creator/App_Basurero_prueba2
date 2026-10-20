@@ -1,0 +1,32 @@
+{
+  "rules": {
+    "usuarios": {
+      ".read": true,
+      "$rut": {
+        ".write": "!data.exists()",
+        ".validate": "$rut.matches(/^[0-9]{7,8}-[0-9K]$/) && newData.hasChildren(['rut', 'nombre', 'apellido', 'correo', 'cargo', 'contrasena']) && newData.child('rut').val() === $rut && newData.child('contrasena').val().matches(/^[0-9a-f]{64}$/)"
+      }
+    },
+    "circuito": {
+      ".read": true,
+      ".write": true,
+      "estado": {
+        ".validate": "newData.val() === 'ACTIVADO' || newData.val() === 'DESACTIVADO'"
+      },
+      "usuario": {
+        ".validate": "newData.isString() && newData.val().length <= 12"
+      },
+      "$otro": {
+        ".validate": false
+      }
+    },
+    "acciones": {
+      ".read": true,
+      ".indexOn": ["accion"],
+      "$id": {
+        ".write": "!data.exists()",
+        ".validate": "newData.hasChildren(['fecha', 'hora', 'usuario', 'accion', 'distancia']) && newData.child('accion').isString() && newData.child('accion').val().length <= 40 && newData.child('distancia').isNumber() && newData.child('distancia').val() >= 0"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "-Ejemplo001": { "fecha": "19-10-2026", "hora": "10:15:02", "usuario": "ESP32", "accion": "Obstáculo Detectado", "distancia": 37 },
+  "-Ejemplo002": { "fecha": "19-10-2026", "hora": "10:16:40", "usuario": "ESP32", "accion": "Cerca de Impactar", "distancia": 9 }
+}
